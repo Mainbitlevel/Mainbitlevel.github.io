@@ -4,11 +4,135 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link id="mycolors" rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
     </head>
     <body>
-    <h1>Hola Mundo</h1>
-    <hr>
-    <p>Esta es mi primer página hosteada en Github</p>
+    
+<p>
+<button class="w3-button w3-black" onclick="saveBlack()">Black</button>
+<button class="w3-button w3-blue" onclick="saveBlue()">Blue</button>
+<button class="w3-button w3-khaki" onclick="saveKhaki()">Khaki</button>
+<button class="w3-button w3-yellow" onclick="saveYellow()">Yellow</button>
+<button class="w3-button w3-orange" onclick="saveOrange()">Orange</button>
+<button class="w3-button w3-red" onclick="saveRed()">Red</button>
+<button class="w3-button w3-purple" onclick="savePurple()">Purple</button>
+<button class="w3-button w3-aqua" onclick="saveAqua()">Aqua</button>
+<button class="w3-button w3-indigo" onclick="saveIndigo()">Indigo</button>
+<button class="w3-button w3-green" onclick="saveGreen()">Green</button>
+<button class="w3-button w3-teal" onclick="saveTeal()">Teal</button>
+
+</p>
+
+<div class="w3-card-4">
+<div class="w3-container w3-theme w3-card-2">
+  <h1>Indigo</h1>
+</div>
+
+<div class="w3-container w3-text-theme">
+<h2>w3-text-theme</h2></div>
+
+<ul class="w3-ul w3-border-top">
+  <li class="w3-theme-l5">
+  <a class="w3-button w3-xlarge w3-circle w3-theme-action"
+  style="position:fixed;top:48px;right:24px;">+</a>
+  <p>w3-theme-l5 (w3-theme-light)</p>
+  </li>
+  <li class="w3-theme-l4">
+    <p>w3-theme-l4</p>
+  </li>
+  <li class="w3-theme-l3">
+    <p>w3-theme-l3</p>
+  </li>
+  <li class="w3-theme-l2">
+    <p>w3-theme-l2</p>
+  </li>
+  <li class="w3-theme-l1">
+    <p>w3-theme-l1</p>
+  </li>
+  <li class="w3-theme">
+    <p>w3-theme</p>
+  </li>
+  <li class="w3-theme-d1">
+    <p>w3-theme-d1</p>
+  </li>
+  <li class="w3-theme-d2">
+    <p>w3-theme-d2</p>
+  </li>
+  <li class="w3-theme-d3">
+    <p>w3-theme-d3</p>
+  </li>
+  <li class="w3-theme-d4">
+    <p>w3-theme-d4</p>
+  </li>
+  <li class="w3-theme-d5">
+    <p>w3-theme-d5 (w3-theme-dark)</p>
+  </li>
+</ul>
+</div>
     </body>
+
+<script>
+ 
+
+
+
+  var mycolor = localStorage.color;
+function saveBlack() {
+    localStorage.setItem("color" , "black");
+    location.reload();
+    return mycolor;
+}
+
+function saveBlue() {
+    localStorage.setItem("color" , "blue");
+    location.reload();
+}
+
+function saveKhaki() {
+    localStorage.setItem("color" , "Khaki");
+    location.reload();
+    }
+function saveYellow() {
+    localStorage.setItem("color" , "yellow");
+    location.reload();
+    }
+function saveOrange() {
+    localStorage.setItem("color" , "orange");
+    location.reload();
+    }
+function saveRed() {
+    localStorage.setItem("color" , "red");
+    location.reload();
+    }
+function savePurple() {
+    localStorage.setItem("color" , "purple");
+    location.reload();
+    }
+function saveAqua() {
+    localStorage.setItem("color" , "aqua");
+    location.reload();
+    }
+function saveIndigo() {
+    localStorage.setItem("color" , "indigo");
+    location.reload();
+    }
+function saveGreen() {
+    localStorage.setItem("color" , "green");
+    location.reload();
+    }
+function saveTeal() {
+    localStorage.setItem("color" , "teal");
+    location.reload();
+    }
+
+if (localStorage.color == mycolor) {
+    document.getElementById("mycolors").href="https://www.w3schools.com/lib/w3-theme-" + mycolor +".css";
+}
+if (localStorage.color == undefined) {
+  
+    document.getElementById("mycolors").href="https://www.w3schools.com/lib/w3-theme-indigo.css";
+}
+
+</script>
 </html>
